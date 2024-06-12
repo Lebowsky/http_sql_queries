@@ -52,7 +52,7 @@ def get_query_result(query_text: str, params="") -> str:
 
     conn.commit()
     conn.close()
-    return '\n'.join(data)
+    return '\r\n'.join(data)
 
 
 if __name__ == '__main__':
